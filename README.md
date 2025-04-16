@@ -58,13 +58,11 @@ cd tech-interview-simulator
 
 # Install dependencies (example)
 npm install
-# or
-yarn install
 
 # Configure environment variables (create .env.local)
 # Add API keys for Stack-Auth, Convex, Deepgram, Polly, LLM
 
 # Run the development server (example)
 npm run dev
-# or
-yarn dev
+```
+
