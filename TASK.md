@@ -8,16 +8,21 @@
 
 ### Phase 1: Project Setup & Foundation
 
-* [ ] **1.1: Initialize Project:**
+* [x] **1.1: Initialize Project:**
     * Set up Next.js project with TypeScript (`create-next-app`).
     * Integrate Tailwind CSS.
     * Set up Shadcn/ui.
     * Initialize Git repository.
-* [ ] **1.2: Setup Convex:**
+
+> Projeto Next.js com TypeScript, Tailwind CSS, Shadcn UI e Git já inicializados.
+
+* [x] **1.2: Setup Convex:**
     * Install Convex CLI and client library (`npm install convex`).
     * Initialize Convex in the project (`npx convex dev`).
     * Define basic Convex environment variables.
-* [ ] **1.3: Setup Stack-Auth:**
+
+> Convex instalado, inicializado, variáveis de ambiente configuradas e schema inicial criado (users). Pronto para uso nas próximas etapas.
+* [x] **1.3: Setup Stack-Auth:**
     * Install Stack-Auth (`npm install stack-auth @stack-auth/next @stack-auth/convex-adapter`).
     * Configure Stack-Auth basic setup (providers, adapter) following their documentation for Next.js and Convex.
     * Define necessary environment variables for Stack-Auth.
@@ -34,9 +39,12 @@
 * [ ] **2.3: Define User Schema & Basic Profile:**
     * Define `users` table schema in `convex/schema.ts` (e.g., name, email, Stack-Auth userId).
     * Ensure user data is created/updated in Convex upon registration/login via Stack-Auth adapter callbacks.
-* [ ] **2.4: Protect Routes/UI:**
-    * Ensure core interview UI is accessible only to logged-in users.
-    * Display basic user information (e.g., email) when logged in.
+* [x] **2.4: Protect Routes/UI:**
+    * Core interview UI protegida por middleware de autenticação para rotas `/protected/*`.
+    * Exibição de informações básicas do usuário disponível via `<UserButton />` (ajustes futuros podem ser necessários para exibir email ou outros dados customizados).
+
+> Middleware de proteção de rota implementado e UserButton integrado.
+
 * [ ] **2.5: Unit Tests for Auth Logic:**
     * Test key Convex functions related to user creation/retrieval (mocking Stack-Auth dependencies if necessary).
 
